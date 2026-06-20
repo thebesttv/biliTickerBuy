@@ -15,7 +15,7 @@ def current_time_ms(*, timeoffset: float = 0, base_ms: int | None = None) -> int
 
 class TimeUtil:
     # NTP服务器默认为ntp.aliyun.com, 可根据实际情况修改
-    def __init__(self, _ntp_server="ntp.aliyun.com") -> None:
+    def __init__(self, _ntp_server="ntp.nju.edu.cn") -> None:
         self.ntp_server = _ntp_server
         self.client = ntplib.NTPClient()
         self.timeoffset: float = 0
