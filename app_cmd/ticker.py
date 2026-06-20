@@ -240,7 +240,7 @@ def ticker_cmd(args: TickerCliArgs):
             allowed_paths.append(target)
 
     demo.launch(
-        share=args.share or is_docker,
+        share=args.share,
         inbrowser=not is_docker,
         server_name=args.server_name,
         server_port=args.port,
