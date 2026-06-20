@@ -38,6 +38,7 @@ class RuntimeOptions:
     ntfy_url: str = ""
     ntfy_username: str = ""
     ntfy_password: str = ""
+    feishu_webhook: str = ""
     notify_proxy_exhausted: bool = False
     show_random_message: bool = True
     show_qrcode: bool = True
@@ -303,6 +304,7 @@ def build_runtime_options(
     ntfy_url: str = "",
     ntfy_username: str = "",
     ntfy_password: str = "",
+    feishu_webhook: str = "",
     notify_proxy_exhausted: bool = False,
     show_random_message: bool = True,
     show_qrcode: bool = True,
@@ -336,6 +338,7 @@ def build_runtime_options(
         ntfy_url=ntfy_url,
         ntfy_username=ntfy_username,
         ntfy_password=ntfy_password,
+        feishu_webhook=feishu_webhook,
         notify_proxy_exhausted=notify_proxy_exhausted,
         show_random_message=show_random_message,
         show_qrcode=show_qrcode,

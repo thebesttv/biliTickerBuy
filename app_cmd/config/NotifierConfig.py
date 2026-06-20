@@ -70,6 +70,15 @@ class NotifierConfig(BasicConfig):
     )
     """Password for ntfy authentication."""
 
+    feishu_webhook: str = config_field(
+        "",
+        env="BTB_FEISHU_WEBHOOK",
+        runtime="feishu_webhook",
+        db="feishuWebhook",
+        cli="--notifier-config.feishu-webhook",
+    )
+    """Feishu bot webhook URL."""
+
     meow_nickname: str = config_field(
         "",
         env="BTB_MEOWNICKNAME",
